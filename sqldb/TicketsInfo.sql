@@ -1,0 +1,20 @@
+USE [wateratr]
+GO
+
+/****** Object:  Table [dbo].[TicketsInfo]    Script Date: 01.06.2024 20:20:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TicketsInfo](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[idTicket] [int] NOT NULL,
+	[idService] [int] NOT NULL,
+ CONSTRAINT [PK_TicketsInfo] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
